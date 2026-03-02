@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>34DEV Scripting</title>
+  <meta name="description" content="34DEV Scripting — MTA Roleplay sunucuları için premium sistemler, modern UI ve özel script çözümleri." />
+  <meta name="theme-color" content="#05060a" />
+
+  <meta property="og:title" content="34DEV Scripting" />
+  <meta property="og:description" content="MTA Roleplay sunucuları için premium sistemler, modern UI ve özel script çözümleri." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <!-- BG effects -->
+  <div class="bg-orb orb-1" aria-hidden="true"></div>
+  <div class="bg-orb orb-2" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="nav-wrap" id="top">
+    <nav class="nav">
+      <a class="brand" href="#top" aria-label="34DEV ana sayfa">
+        <span class="brand-dot"></span>
+        <span class="brand-text">34DEV <span class="muted">Scripting</span></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Menüyü aç/kapat" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#services">Hizmetler</a>
+        <a href="#packages">Paketler</a>
+        <a href="#showcase">Showcase</a>
+        <a href="#process">Süreç</a>
+        <a href="#faq">SSS</a>
+        <a href="#contact">İletişim</a>
+
+        <!-- Değiştir: Discord linkin -->
+        <a class="btn btn-ghost" href="https://discord.gg/34dev" target="_blank" rel="noreferrer">Discord</a>
+        <a class="btn btn-primary" href="#contact">Teklif Al</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="section hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <div class="pill">
+            <span class="pill-glow"></span>
+            <span>⚡ Optimize • Modern UI • Destekli Teslim</span>
+          </div>
+
+          <h1 class="h1">
+            MTA Roleplay için
+            <span class="grad">premium sistemler</span>
+            ve özel script çözümleri.
+          </h1>
+
+          <p class="lead">
+            34DEV Scripting; panel/MDT, dispatch, job UI, inventory/market, log & güvenlik gibi
+            sistemleri <b>stabil</b>, <b>modüler</b> ve <b>FPS dostu</b> şekilde geliştirir.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#showcase">Showcase’i Gör</a>
+            <!-- Değiştir: Discord linkin -->
+            <a class="btn btn-ghost" href="https://discord.gg/34dev" target="_blank" rel="noreferrer">Discord’a Gel</a>
+          </div>
+
+          <div class="mini-row">
+            <div class="mini">
+              <span class="mini-ico">✅</span>
+              <span>TR/EN yapı</span>
+            </div>
+            <div class="mini">
+              <span class="mini-ico">✅</span>
+              <span>Dokümantasyon</span>
+            </div>
+            <div class="mini">
+              <span class="mini-ico">✅</span>
+              <span>Kurulum desteği</span>
+            </div>
+            <div class="mini">
+              <span class="mini-ico">✅</span>
+              <span>Güncelleme</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="glass card hero-card">
+            <div class="card-top">
+              <div class="status-dot"></div>
+              <div class="mono">34DEV • VITRIN</div>
+              <div class="chip">STABLE</div>
+            </div>
+
+            <div class="hero-mock">
+              <div class="mock-line"></div>
+              <div class="mock-grid">
+                <div class="mock-box"></div>
+                <div class="mock-box"></div>
+                <div class="mock-box"></div>
+                <div class="mock-box"></div>
+              </div>
+              <div class="mock-list">
+                <div class="mock-item"><span></span><span></span></div>
+                <div class="mock-item"><span></span><span></span></div>
+                <div class="mock-item"><span></span><span></span></div>
+              </div>
+            </div>
+
+            <div class="hero-card-footer">
+              <div class="tag">MDT / Panel UI</div>
+              <div class="tag">Dispatch</div>
+              <div class="tag">Job UI</div>
+              <div class="tag">Log & Security</div>
+            </div>
+          </div>
+
+          <div class="stats glass">
+            <div class="stat">
+              <div class="stat-num" data-count="25">0</div>
+              <div class="stat-label">Tamamlanan Proje</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num" data-count="15">0</div>
+              <div class="stat-label">Aktif Müşteri</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num" data-count="120">0</div>
+              <div class="stat-label">Güncelleme</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num" data-count="7">0</div>
+              <div class="stat-label">Ticket Desteği</div>
+            </div>
+          </div>
+
+          <p class="tiny muted right-note">
+            Not: Sayıları istersen gerçek verilerine göre düzenlersin. (+ işareti CSS ile ekli)
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">Hizmetler</h2>
+          <p class="muted">Sunucuna uygun: hazır paket veya tamamen özel geliştirme.</p>
+        </div>
+
+        <div class="grid cards-3">
+          <article class="glass card reveal">
+            <h3 class="h3">Optimizasyon Odaklı</h3>
+            <p>FPS dostu, gereksiz tick yok. Kalabalık sunucularda stabil çalışma.</p>
+            <ul class="list">
+              <li>Event/Timer kontrolü</li>
+              <li>Cache & throttling</li>
+              <li>Hata loglama</li>
+            </ul>
+          </article>
+
+          <article class="glass card reveal">
+            <h3 class="h3">Modern UI / UX</h3>
+            <p>MDT/panel tasarımları, akıcı animasyonlar, kullanıcı dostu arayüz.</p>
+            <ul class="list">
+              <li>Responsive paneller</li>
+              <li>Kaydırmalı listeler</li>
+              <li>Temiz tipografi</li>
+            </ul>
+          </article>
+
+          <article class="glass card reveal">
+            <h3 class="h3">Güvenlik & Log</h3>
+            <p>Yetki kontrolü, işlem kayıtları, suistimal önleyici sistemler.</p>
+            <ul class="list">
+              <li>Role-based access</li>
+              <li>Detaylı log sistemi</li>
+              <li>Audit akışı</li>
+            </ul>
+          </article>
+
+          <article class="glass card reveal">
+            <h3 class="h3">Modüler Sistemler</h3>
+            <p>İstediğini aç/kapat. Sunucuna göre kolayca genişlet.</p>
+            <ul class="list">
+              <li>Modül bazlı yapı</li>
+              <li>Konfigürasyon dosyaları</li>
+              <li>Entegre uyumluluk</li>
+            </ul>
+          </article>
+
+          <article class="glass card reveal">
+            <h3 class="h3">Kurulum Desteği</h3>
+            <p>Dokümantasyon + ticket destek. Hızlı entegrasyon.</p>
+            <ul class="list">
+              <li>Kurulum rehberi</li>
+              <li>Test & doğrulama</li>
+              <li>Hızlı hotfix</li>
+            </ul>
+          </article>
+
+          <article class="glass card reveal">
+            <h3 class="h3">TR/EN Yapı</h3>
+            <p>Çok dilli altyapıya uygun metin & dosya düzeni.</p>
+            <ul class="list">
+              <li>Locale dosyaları</li>
+              <li>Kolay çeviri</li>
+              <li>Sunucu standardı</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PACKAGES -->
+    <section class="section" id="packages">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">Paketler</h2>
+          <p class="muted">Fiyatlandırma ve kapsam için Discord üzerinden ticket açabilirsin.</p>
+        </div>
+
+        <div class="grid pricing">
+          <article class="glass card price reveal">
+            <div class="price-top">
+              <h3 class="h3">Starter Pack</h3>
+              <div class="badge">Başlangıç</div>
+            </div>
+            <p class="muted">Temel sistemler + kurulum desteği.</p>
+            <ul class="list">
+              <li>Temel UI bileşenleri</li>
+              <li>Basit log sistemi</li>
+              <li>Kurulum & doğrulama</li>
+            </ul>
+            <a class="btn btn-ghost full" href="#contact">Teklif Al</a>
+          </article>
+
+          <article class="glass card price featured reveal">
+            <div class="price-top">
+              <h3 class="h3">Roleplay Essentials</h3>
+              <div class="badge badge-hot">Önerilen</div>
+            </div>
+            <p class="muted">Sunucu için “çekirdek” paket.</p>
+            <ul class="list">
+              <li>Dispatch / ihbar paneli</li>
+              <li>MDT modülleri</li>
+              <li>Job / görev UI</li>
+              <li>Gelişmiş log & yetki</li>
+            </ul>
+            <a class="btn btn-primary full" href="#contact">Teklif Al</a>
+          </article>
+
+          <article class="glass card price reveal">
+            <div class="price-top">
+              <h3 class="h3">Custom Project</h3>
+              <div class="badge">Özel</div>
+            </div>
+            <p class="muted">Sıfırdan ihtiyaç analizi + tasarım + geliştirme.</p>
+            <ul class="list">
+              <li>UI tasarım planı</li>
+              <li>Geliştirme + test</li>
+              <li>Teslim + bakım opsiyonu</li>
+            </ul>
+            <!-- Değiştir: Discord linkin -->
+            <a class="btn btn-ghost full" href="https://discord.gg/34dev" target="_blank" rel="noreferrer">Discord’da Ticket Aç</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOWCASE -->
+    <section class="section" id="showcase">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">Showcase</h2>
+          <p class="muted">Aşağıdaki alanlara ekran görüntüsü / video linklerini ekleyebilirsin.</p>
+        </div>
+
+        <div class="grid cards-3">
+          <article class="glass card showcase reveal">
+            <div class="shot">
+              <div class="shot-top">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              </div>
+              <div class="shot-body">
+                <div class="shot-line"></div>
+                <div class="shot-line short"></div>
+                <div class="shot-grid">
+                  <div></div><div></div><div></div><div></div>
+                </div>
+              </div>
+            </div>
+            <h3 class="h3">Dispatch Panel</h3>
+            <p>İhbar akışı, rota, olay yönetimi ve ekip koordinasyonu.</p>
+          </article>
+
+          <article class="glass card showcase reveal">
+            <div class="shot">
+              <div class="shot-top">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              </div>
+              <div class="shot-body">
+                <div class="shot-line"></div>
+                <div class="shot-grid">
+                  <div></div><div></div><div></div><div></div>
+                </div>
+                <div class="shot-line short"></div>
+              </div>
+            </div>
+            <h3 class="h3">MDT / Panel UI</h3>
+            <p>Profil, kayıt, ceza, arama, listeleme ve yönetim modülleri.</p>
+          </article>
+
+          <article class="glass card showcase reveal">
+            <div class="shot">
+              <div class="shot-top">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              </div>
+              <div class="shot-body">
+                <div class="shot-list">
+                  <div></div><div></div><div></div><div></div>
+                </div>
+                <div class="shot-line short"></div>
+              </div>
+            </div>
+            <h3 class="h3">Job UI (Kaydırmalı)</h3>
+            <p>Modern meslek seçimi, kartlar, akıcı scroll ve hover efektleri.</p>
+          </article>
+
+          <article class="glass card showcase reveal">
+            <div class="shot">
+              <div class="shot-top">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              </div>
+              <div class="shot-body">
+                <div class="shot-grid">
+                  <div></div><div></div><div></div><div></div>
+                </div>
+                <div class="shot-line"></div>
+              </div>
+            </div>
+            <h3 class="h3">Inventory / Market</h3>
+            <p>Envanter yönetimi, filtreleme, market akışları ve UI bileşenleri.</p>
+          </article>
+
+          <article class="glass card showcase reveal">
+            <div class="shot">
+              <div class="shot-top">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              </div>
+              <div class="shot-body">
+                <div class="shot-line"></div>
+                <div class="shot-line short"></div>
+                <div class="shot-list">
+                  <div></div><div></div><div></div>
+                </div>
+              </div>
+            </div>
+            <h3 class="h3">Log & Güvenlik</h3>
+            <p>İşlem kayıtları, yetki kontrolü, audit ve suistimal önleme.</p>
+          </article>
+
+          <article class="glass card showcase reveal">
+            <div class="shot">
+              <div class="shot-top">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              </div>
+              <div class="shot-body">
+                <div class="shot-grid">
+                  <div></div><div></div><div></div><div></div>
+                </div>
+                <div class="shot-line short"></div>
+              </div>
+            </div>
+            <h3 class="h3">Özel Projeler</h3>
+            <p>Sunucuya özel akışlar, benzersiz UI tasarımları ve modüller.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">Çalışma Süreci</h2>
+          <p class="muted">Hızlı, net, profesyonel teslim süreci.</p>
+        </div>
+
+        <div class="grid steps">
+          <div class="glass card step reveal">
+            <div class="step-no">1</div>
+            <h3 class="h3">İhtiyaç Analizi</h3>
+            <p>Sunucun, hedefin, altyapın ve modüller netleşir.</p>
+          </div>
+          <div class="glass card step reveal">
+            <div class="step-no">2</div>
+            <h3 class="h3">Tasarım / UI Planı</h3>
+            <p>Arayüz, akış ve modül planı hazırlanır.</p>
+          </div>
+          <div class="glass card step reveal">
+            <div class="step-no">3</div>
+            <h3 class="h3">Geliştirme</h3>
+            <p>Temiz kod + optimize yapı + test süreci.</p>
+          </div>
+          <div class="glass card step reveal">
+            <div class="step-no">4</div>
+            <h3 class="h3">Teslim & Destek</h3>
+            <p>Kurulum, hotfix ve bakım opsiyonlarıyla teslim edilir.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="h2">SSS</h2>
+          <p class="muted">Sık sorulan sorular.</p>
+        </div>
+
+        <div class="faq">
+          <details class="glass reveal" open>
+            <summary>Kurulum yapıyor musunuz?</summary>
+            <p>Evet. Ticket üzerinden kurulum desteği sağlıyoruz.</p>
+          </details>
+          <details class="glass reveal">
+            <summary>TR/EN dil desteği var mı?</summary>
+            <p>Evet. Sistemler TR/EN yapıya uygun teslim edilir.</p>
+          </details>
+          <details class="glass reveal">
+            <summary>Güncelleme veriyor musunuz?</summary>
+            <p>Paket/proje kapsamına göre güncelleme ve bakım planı sunuyoruz.</p>
+          </details>
+          <details class="glass reveal">
+            <summary>Özel sistem yaptırabilir miyim?</summary>
+            <p>Evet. İhtiyaç analizi sonrası tamamen özel geliştirme yapıyoruz.</p>
+          </details>
+          <details class="glass reveal">
+            <summary>Teslim süresi ne kadar?</summary>
+            <p>Kapsama göre değişir. Ticket’ta net plan çıkarıyoruz.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact glass reveal">
+          <div>
+            <h2 class="h2">Projeni anlat, teklifini çıkaralım.</h2>
+            <p class="muted">
+              Paket alabilir veya tamamen özel sistem geliştirebilirsin.
+              En hızlı iletişim Discord ticket.
+            </p>
+
+            <div class="contact-actions">
+              <!-- Değiştir: Discord linkin -->
+              <a class="btn btn-primary" href="https://discord.gg/34dev" target="_blank" rel="noreferrer">Discord’da Ticket Aç</a>
+              <a class="btn btn-ghost" href="#packages">Paketleri İncele</a>
+            </div>
+
+            <p class="tiny muted">
+              İstersen buraya WhatsApp / e-posta da ekleyebilirsin (login yok).
+            </p>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-row">
+              <span class="k">Marka</span>
+              <span class="v">34DEV Scripting</span>
+            </div>
+            <div class="contact-row">
+              <span class="k">Odak</span>
+              <span class="v">MTA RP Sistemleri</span>
+            </div>
+            <div class="contact-row">
+              <span class="k">Teslim</span>
+              <span class="v">Optimize + Modüler</span>
+            </div>
+            <div class="contact-row">
+              <span class="k">Destek</span>
+              <span class="v">Ticket</span>
+            </div>
+
+            <div class="divider"></div>
+
+            <a class="btn btn-ghost full" href="#top">Yukarı Çık</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container foot-grid">
+        <div class="foot-left">
+          <div class="brand small">
+            <span class="brand-dot"></span>
+            <span class="brand-text">34DEV <span class="muted">Scripting</span></span>
+          </div>
+          <p class="tiny muted">© <span id="year"></span> 34DEV Scripting — Tüm hakları saklıdır.</p>
+        </div>
+
+        <div class="foot-right">
+          <!-- Değiştir: kendi linklerin -->
+          <a href="https://discord.gg/34dev" target="_blank" rel="noreferrer">Discord</a>
+          <a href="#showcase">Showcase</a>
+          <a href="#contact">İletişim</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
